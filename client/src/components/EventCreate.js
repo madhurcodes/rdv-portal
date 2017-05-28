@@ -2,7 +2,7 @@
  * Created by Nikhil on 28/05/17.
  */
 import React, { Component } from 'react';
-import {
+/*import {
   Table,
   TableBody,
   TableHeader,
@@ -11,13 +11,13 @@ import {
   TableRowColumn,
   TableFooter,
 } from 'material-ui/Table';
+import MenuItem from 'material-ui/MenuItem';*/
 import SelectField from 'material-ui/SelectField';
-import MenuItem from 'material-ui/MenuItem';
 import Toggle from 'material-ui/Toggle';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import { Card, CardText, CardTitle} from 'material-ui'
 import TextField from 'material-ui/TextField';
-import Divider from 'material-ui/Divider';
+/*import Divider from 'material-ui/Divider';
 import IconButton from 'material-ui/IconButton'
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import Delete from 'material-ui/svg-icons/action/delete';
@@ -26,7 +26,7 @@ import { checkLogin } from '../utils/sessionAPI'
 import { getCategories, addCategory, deleteCategory } from '../utils/categoryAPI'
 import Loading from './Loading'
 import Error from './Error'
-import Alert from './Alert'
+import Alert from './Alert'*/
 
 class BasicInfo extends Component {
   render() {

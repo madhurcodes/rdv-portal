@@ -20,7 +20,7 @@ function login(email, password) {
 
 function getToken() {
   const token = localStorage.getItem('RDV_JWT');
-  if (!token || token === '')
+  if (typeof(token) == "undefined" || !token || token === '')
     return null;
   return token;
 }

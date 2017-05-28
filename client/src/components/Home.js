@@ -21,18 +21,19 @@ class Home extends Component {
     const token = getToken();
     if(!token) {
       this.props.history.push('/login');
+    } else {
+      validateToken(token)
+        .then(function (response) {
+          if (response.error) {
+            this.props.history.push('/login');
+          } else {
+            if (!response.user.contact)
+              this.props.history.push('/profile');
+            else
+              this.setState({user: response.user});
+          }
+        }.bind(this))
     }
-    validateToken(token)
-      .then(function (response) {
-        if (response.error) {
-          this.props.history.push('/login');
-        } else {
-          if (!response.user.contact)
-            this.props.history.push('/profile');
-          else
-            this.setState({user: response.user});
-        }
-      }.bind(this))
   }
   render() {
     const style = {

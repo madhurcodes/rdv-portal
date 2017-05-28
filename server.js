@@ -38,6 +38,10 @@ app.get('/api/venue', venueController.getVenues);
 app.post('/api/admin/venue', authorize('fest', 'manage_venues'), venueController.addVenue);
 app.delete('/api/admin/venue/:venue', authorize('fest', 'manage_venues'), venueController.deleteVenue);
 
+if (process.env.NODE_ENV === 'production') {
+  app.use((req, res) => res.sendFile(`${__dirname}/client/build/index.html`))
+}
+
 app.listen(app.get('port'),function(){
     console.log("Started listening on port", app.get('port'));
 });
