@@ -13,10 +13,8 @@ const venueController = require('./controllers/venueController');
 
 app.set('port', (process.env.PORT || 3001));
 
-console.log('Heyyy #1', process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'production') {
-    console.log('Heyyy #2', process.env.NODE_ENV);
-    app.use(express.static('client/build'));
+    app.use('/*' ,express.static('client/build'));
 }
 
 app.use(bodyParser.json());

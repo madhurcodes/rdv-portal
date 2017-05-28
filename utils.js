@@ -11,6 +11,22 @@ AWS.config.update({
   endpoint: new AWS.Endpoint('http://localhost:8000')
 });
 
+if (process.env.NODE_ENV === 'production') {
+  AWS.config.update({
+    accessKeyId: process.env.ACCESS_KEY,
+    secretAccessKey: process.env.SECRET_KEY,
+    region: "us-west-2",
+    endpoint: new AWS.Endpoint('http://	elasticbeanstalk.us-west-2.amazonaws.com')
+  });
+} else {
+  AWS.config.update({
+    accessKeyId: "myKeyId",
+    secretAccessKey: "secretKey",
+    region: "us-east-1",
+    endpoint: new AWS.Endpoint('http://localhost:8000')
+  });
+}
+
 function connectToDB() {
   return new AWS.DynamoDB.DocumentClient();
 }
