@@ -67,7 +67,6 @@ function addTeamMember(req, res) {
     cleanMember.department = member.department;
   cleanMember.designation = member.designation;
   const password = (Math.random() + 1).toString(36).substr(2,6);
-  console.log(password);
   cleanMember.password = crypto.createHash('md5').update(password).digest('hex');
   cleanMember.permissions = defaultPermissions.getDefault(member.role, member.department);
   cleanMember.permissions.can_update_all = false;

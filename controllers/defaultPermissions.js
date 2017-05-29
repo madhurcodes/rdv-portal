@@ -51,6 +51,7 @@ function getDefault(role, department="") {
       else if (department.toLowerCase().indexOf("international") !== -1) {
         perms_c.can_manage_event_international = true;
       }
+      return perms_c;
       break;
     default: return {}
   }
