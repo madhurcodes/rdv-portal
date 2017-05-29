@@ -15,8 +15,8 @@ if (process.env.NODE_ENV === 'production') {
   AWS.config.update({
     accessKeyId: process.env.ACCESS_KEY,
     secretAccessKey: process.env.SECRET_KEY,
-    region: "us-west-2",
-    endpoint: new AWS.Endpoint('https://dynamodb.us-west-2.amazonaws.com')
+    region: "ap-south-1",
+    endpoint: new AWS.Endpoint('https://dynamodb.ap-south-1.amazonaws.com')
   });
 } else {
   AWS.config.update({
