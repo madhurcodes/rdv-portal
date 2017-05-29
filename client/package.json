@@ -15,6 +15,7 @@
     "react-scripts": "1.0.3"
   },
   "proxy": "http://localhost:3001/",
+  "homepage": "http://localhost:3001/admin",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

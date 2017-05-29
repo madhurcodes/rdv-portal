@@ -11,7 +11,7 @@ class App extends Component {
   }
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename='/admin'>
         <div className="App">
           <Navbar onLogout={this.onLogout}/>
           {routes}

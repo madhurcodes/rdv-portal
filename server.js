@@ -14,7 +14,8 @@ const venueController = require('./controllers/venueController');
 app.set('port', (process.env.PORT || 3001));
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'));
+    app.use('/admin' ,express.static('client/build'));
+  app.use(express.static('main'));
 }
 
 app.use(bodyParser.json());
@@ -39,7 +40,7 @@ app.post('/api/admin/venue', authorize('fest', 'manage_venues'), venueController
 app.delete('/api/admin/venue/:venue', authorize('fest', 'manage_venues'), venueController.deleteVenue);
 
 if (process.env.NODE_ENV === 'production') {
-  app.use((req, res) => res.sendFile(`${__dirname}/client/build/index.html`))
+  app.use('/admin', (req, res) => res.sendFile(`${__dirname}/client/build/index.html`))
 }
 
 app.listen(app.get('port'),function(){
