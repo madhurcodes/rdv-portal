@@ -1,0 +1,319 @@
+body {
+
+    /*background-image: url(images/Reference-01.png);*/
+    /*To change the above line afterwords to give only the background*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: lightblue;
+    margin: 0;
+    background: #000;
+    z-index: 0;
+}
+
+.horizontalCenter{
+    width: 100%;
+    margin:auto;
+
+}
+
+.enlarge{
+    transition: all .2s ease-in-out;
+}
+
+.enlarge:hover{
+    transform: scale(1.1);
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+    opacity:1;
+}
+.backgroundImage{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+    opacity:1;
+}
+
+#endBackground{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -50;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    opacity:0;
+    -webkit-transition: opacity .1s ease-in-out;
+    -moz-transition: opacity .1s ease-in-out;
+    -ms-transition: opacity .1s ease-in-out;
+    -o-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+}
+#contactUsImage{
+    position: fixed;
+    opacity:0;  display: none;
+    /*See to both of the above attributes on click*/
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 50;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1 s ease-in-out;
+}
+.imageSurface{
+    opacity: 1;
+}
+.videofade {
+    opacity: .1;
+}
+
+#rdvLogo{
+    display: none;
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-width: 50%;
+    /*max-height: 30%;*/
+    top:20%;
+    left:26%;
+    z-index: 4;
+    transition: transform .7s ease-in-out;
+}
+/*#rdvLogo:hover{*/
+
+/*}*/
+#endText{
+    /*display: none;*/
+    position: absolute;
+    height: auto;
+    width: auto;
+    margin:auto;
+    max-width: 75%;
+    opacity:0;
+    /*max-height: 54%;*/
+    top:35%;
+    /*bottom: 46%;*/
+    left:13%;
+    z-index: 13;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.logoBase{
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-width: 21%;
+    max-height: 24%;
+    top:74%;
+    /*bottom: 46%;*/
+    /*left:31%;*/
+    z-index: 5;
+}
+
+.navigation{
+    display: none;
+}
+#brochure{
+    left:9%;
+}
+#afterMovie{
+    left:41%;
+
+}
+#contactUs{
+    left:76%;
+}
+
+#loading_gif{
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-width: 40%;
+    max-height: 40%;
+    top:55%;
+    /*bottom: 46%;*/
+    /*left:31%;*/
+    z-index: 5;
+    left:42%;
+}
+
+
+#loading_page{
+    background-image:    url("images/Loading Page Background-01.png");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
+#overlayImage{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    opacity: 0.7;
+    /*-webkit-transition: opacity .1s ease-in-out;*/
+    /*-moz-transition: opacity .1s ease-in-out;*/
+    /*-ms-transition: opacity .1s ease-in-out;*/
+    /*-o-transition: opacity .1s ease-in-out;*/
+    /*transition: opacity .1s ease-in-out;*/
+
+}
+/*.animate{*/
+
+/*}*/
+
+
+/*.tent{*/
+    /*position: absolute;*/
+    /*height: auto;*/
+    /*width: auto;*/
+    /*max-width: 10%;*/
+    /*max-height: 21%;*/
+    /*!*top:33%;*!*/
+    /*bottom: 46%;*/
+    /*left:31%;*/
+    /*z-index: 4;*/
+/*}*/
+
+/*.bohoChick1{*/
+    /*position: absolute;*/
+    /*height: auto;*/
+    /*width: auto;*/
+    /*max-width: 5%;*/
+    /*max-height: 24%;*/
+    /*!*top:33%;*!*/
+    /*bottom:43%;*/
+    /*left:43%;*/
+    /*z-index: 5;*/
+/*}*/
+
+/*.fire{*/
+    /*position: absolute;*/
+    /*height: auto;*/
+    /*width: auto;*/
+    /*max-width: 6%;*/
+    /*max-height: 12.5%;*/
+    /*!*top:43%;*!*/
+    /*bottom: 44.5%;*/
+    /*left:49%;*/
+    /*z-index: 3;*/
+/*}*/
+
+/*.bohoChick2{*/
+     /*position: absolute;*/
+     /*height: auto;*/
+     /*width: auto;*/
+     /*max-width: 4.5%;*/
+     /*max-height: 25%;*/
+     /*!*top:31%;*!*/
+     /*bottom:44% ;*/
+     /*left:58%;*/
+     /*z-index: 5;*/
+ /*}*/
+
+/*.dreamCatcher{*/
+    /*position: absolute;*/
+    /*height: auto;*/
+    /*width: auto;*/
+    /*max-width: 4.5%;*/
+    /*max-height: 18%;*/
+    /*top:62%;*/
+    /*!*bottom:20%;*!*/
+    /*left:24%;*/
+    /*z-index: 6;*/
+/*}*/
+
+/*.inputBox{*/
+    /*position: absolute;*/
+    /*height: 6.4%;*/
+    /*max-height: 6.5%;*/
+    /*width: 43%;*/
+    /*top: 62%;*/
+    /*bottom: 31%;*/
+    /*left: 27%;*/
+    /*z-index: 5;*/
+    /*opacity: .5;*/
+    /*padding: 1.5% 14%;*/
+    /*background-color: white;*/
+    /*!*border: 1px solid black;*!*/
+    /*border-radius:0px;*/
+    /*color: blueviolet ;*/
+
+    /*!*-webkit-transition: top 0.4s ease-in-out;*!*/
+    /*-webkit-transition: height 0.4s ease-in-out;*/
+    /*transition: height 0.4s ease-in-out;*/
+    /*!*transition: top 0.4s ease-in-out;*!*/
+    /*resize: none;*/
+
+/*}*/
+/*.inputBox:focus {*/
+    /*border: 1px solid #555;*/
+    /*background-color: lightgreen;*/
+    /*height: 6.5%;*/
+    /*!*top:62%;*!*/
+/*}*/
+
+/*.submitButton{*/
+    /*position: absolute;*/
+    /*height: auto;*/
+    /*width: auto;*/
+    /*max-width: 7.4%;*/
+    /*max-height: 7%;*/
+    /*top:62%;*/
+    /*!*bottom:31%;*!*/
+    /*left:68%;*/
+    /*z-index: 6;*/
+/*}*/
+
+
+ /*For mobile devices*/
+/*@media only screen and (max-width: 767px) {*/
+    /*body {*/
+        /*!* The file size of this background image is significantly smaller*/
+         /** to improve page load speed on mobile internet connections *!*/
+        /*background-image: url(images/Background-forMobileDevices.jpg);*/
+    /*}*/
+/*}*/
