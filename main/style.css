@@ -1,5 +1,4 @@
 body {
-
     /*background-image: url(images/Reference-01.png);*/
     /*To change the above line afterwords to give only the background*/
     background-position: center center;
@@ -7,11 +6,18 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: lightblue;
+    height: 100%;
+    overflow: hidden;
     margin: 0;
     background: #000;
     z-index: 0;
 }
-
+html{
+    height: 100%;
+}
+.containerClass{
+    overflow: hidden;
+}
 .horizontalCenter{
     width: 100%;
     margin:auto;
@@ -36,7 +42,7 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
     background-size: cover;
     transition: 1s opacity;
     opacity:1;
@@ -68,11 +74,11 @@ video {
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
     opacity:0;
-    -webkit-transition: opacity .1s ease-in-out;
-    -moz-transition: opacity .1s ease-in-out;
-    -ms-transition: opacity .1s ease-in-out;
-    -o-transition: opacity .1s ease-in-out;
-    transition: opacity .1s ease-in-out;
+    -webkit-transition: opacity .7s ease-in-out;
+    -moz-transition: opacity .7s ease-in-out;
+    -ms-transition: opacity .7s ease-in-out;
+    -o-transition: opacity .7s ease-in-out;
+    transition: opacity .7s ease-in-out;
 }
 #contactUsImage{
     position: fixed;
@@ -91,7 +97,7 @@ video {
     -moz-transition: opacity 1s ease-in-out;
     -ms-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1 s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 .imageSurface{
     opacity: 1;
@@ -104,17 +110,22 @@ video {
     display: none;
     position: absolute;
     height: auto;
-    width: auto;
-    max-width: 50%;
+    /*width: auto;*/
+    width: 30%;
+    margin:auto;
     /*max-height: 30%;*/
-    top:20%;
-    left:26%;
+    top:25%;
+    left:36%;
     z-index: 4;
     transition: transform .7s ease-in-out;
 }
 /*#rdvLogo:hover{*/
 
 /*}*/
+#skipVideoText{
+    top:0%;
+    right:0%;
+}
 #endText{
     /*display: none;*/
     position: absolute;
@@ -124,7 +135,7 @@ video {
     max-width: 75%;
     opacity:0;
     /*max-height: 54%;*/
-    top:35%;
+    top:0%;
     /*bottom: 46%;*/
     left:13%;
     z-index: 13;
@@ -141,7 +152,7 @@ video {
     width: auto;
     max-width: 21%;
     max-height: 24%;
-    top:74%;
+    top:80%;
     /*bottom: 46%;*/
     /*left:31%;*/
     z-index: 5;
@@ -154,8 +165,7 @@ video {
     left:9%;
 }
 #afterMovie{
-    left:41%;
-
+    left:42%;
 }
 #contactUs{
     left:76%;
@@ -165,24 +175,42 @@ video {
     position: absolute;
     height: auto;
     width: auto;
-    max-width: 40%;
-    max-height: 40%;
-    top:55%;
+    max-width: 45%;
+    max-height: 45%;
+    top:45%;
     /*bottom: 46%;*/
     /*left:31%;*/
     z-index: 5;
-    left:42%;
+    left:37%;
+}
+#loading_text{
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-width: 20%;
+    /*max-height: 30%;*/
+    top:78%;
+    /*bottom: 46%;*/
+    /*left:31%;*/
+    z-index: 5;
+    left:39%;
 }
 
 
 #loading_page{
-    background-image:    url("images/Loading Page Background-01.png");
+    background-image:    url("images/Loading Page Background-01.jpg");
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center; 
 }
 
 #overlayImage{
+    -webkit-transition: opacity .1s ease-in-out;
+    -moz-transition: opacity .1s ease-in-out;
+    -ms-transition: opacity .1s ease-in-out;
+    -o-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+
     position: fixed;
     top: 50%;
     left: 50%;
@@ -193,13 +221,7 @@ video {
     z-index: 1;
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
-    opacity: 0.7;
-    /*-webkit-transition: opacity .1s ease-in-out;*/
-    /*-moz-transition: opacity .1s ease-in-out;*/
-    /*-ms-transition: opacity .1s ease-in-out;*/
-    /*-o-transition: opacity .1s ease-in-out;*/
-    /*transition: opacity .1s ease-in-out;*/
-
+    opacity: 0;
 }
 /*.animate{*/
 
