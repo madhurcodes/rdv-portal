@@ -10,6 +10,7 @@ const sessionController = require('./controllers/sessionController');
 const teamController = require('./controllers/teamController');
 const categoryController = require('./controllers/categoryController');
 const venueController = require('./controllers/venueController');
+const capRouter = require("./main/cap/api/server");
 
 app.set('port', (process.env.PORT || 3001));
 
@@ -38,6 +39,9 @@ app.delete('/api/admin/category/:key', authorize('fest', 'manage_event_categorie
 app.get('/api/venue', venueController.getVenues);
 app.post('/api/admin/venue', authorize('fest', 'manage_venues'), venueController.addVenue);
 app.delete('/api/admin/venue/:venue', authorize('fest', 'manage_venues'), venueController.deleteVenue);
+
+// API router for cap portal
+app.use('/api/cap',capRouter);
 
 if (process.env.NODE_ENV === 'production') {
   app.use('/admin', (req, res) => res.sendFile(`${__dirname}/client/build/index.html`))
